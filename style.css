@@ -1,0 +1,25 @@
+:root {
+    background-color: black;
+}
+
+.flex-container {}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 150px auto 150px;
+    grid-template-rows: 150px auto 150px;
+    gap: 1em;
+}
+
+header, footer {
+    grid-column: 1/4;
+    background-color: red;
+}
+
+.sidebar-left, .sidebar-right {
+    background-color: green;
+}
+
+main {
+    background-color: blue;
+}
