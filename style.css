@@ -1,20 +1,18 @@
-:root {
-    /* background-color: black; */
-}
+/* :root {} */
 
 body {
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex-container {}
+/* .flex-container {} */
 
 .grid-container {
     display: grid;
     grid-template-columns: 150px auto 150px;
-    grid-template-rows: 150px auto 150px;
+    grid-template-rows: repeat(4, auto);
     gap: 1em;
-    grid-template-areas: "header header header" "sidebar-1 article sidebar-2" "footer footer footer";
-    border-radius: 10px;
+    grid-template-areas: "header header header" "navbar navbar navbar" "sidebar-1 article sidebar-2" "footer footer footer";
 }
 
 header, footer {
@@ -31,6 +29,27 @@ main {
 
 header {
     grid-area: header;
+}
+
+nav {
+    grid-area: navbar;
+    background-color: yellow;
+}
+
+nav>a {
+    background-color: lightgreen;
+    padding: 5px;
+    border-style: solid;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav>a:hover {
+    background-color: green;
 }
 
 .sidebar-left {
