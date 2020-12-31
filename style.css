@@ -20,11 +20,13 @@ header, footer {
 }
 
 .sidebar-left, .sidebar-right {
-    background-color: rgba(0, 128, 0, 0.468);
+    /* background-color: rgba(0, 128, 0, 0.468); */
 }
 
 main {
-    background-color: rgba(0, 0, 255, 0.454);
+    padding: 1rem;
+    box-shadow: 0px 2px 5px black;
+
 }
 
 header {
@@ -33,7 +35,7 @@ header {
 
 nav {
     grid-area: navbar;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 
 nav>a {
@@ -68,7 +70,16 @@ footer {
     grid-area: footer;
 }
 
-.portrait {
+#img-div {}
+
+#image {
     width: 10rem;
     margin: 1rem;
+    box-shadow: 0px 2px 5px black;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#img-caption {
+    margin-top: -2rem;
 }
