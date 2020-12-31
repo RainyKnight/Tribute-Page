@@ -2,6 +2,10 @@
     background-color: black;
 }
 
+body {
+    text-align: center;
+}
+
 .flex-container {}
 
 .grid-container {
@@ -9,6 +13,7 @@
     grid-template-columns: 150px auto 150px;
     grid-template-rows: 150px auto 150px;
     gap: 1em;
+    grid-template-areas: "header header header" "sidebar-1 article sidebar-2" "footer footer footer";
 }
 
 header, footer {
@@ -22,4 +27,24 @@ header, footer {
 
 main {
     background-color: blue;
+}
+
+header {
+    grid-area: header;
+}
+
+.sidebar-left {
+    grid-area: sidebar-1;
+}
+
+article {
+    grid-area: article;
+}
+
+.sidebar-right {
+    grid-area: sidebar-2;
+}
+
+footer {
+    grid-area: footer;
 }
