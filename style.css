@@ -67,3 +67,8 @@ article {
 footer {
     grid-area: footer;
 }
+
+.portrait {
+    width: 10rem;
+    margin: 1rem;
+}
