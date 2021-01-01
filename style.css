@@ -1,4 +1,7 @@
-/* :root {} */
+:root {
+
+    --minmax: minmax(50px, 150px);
+}
 
 body {
     text-align: center;
@@ -9,14 +12,14 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: 150px auto 150px;
+    grid-template-columns: var(--minmax) auto var(--minmax);
     grid-template-rows: repeat(4, auto);
     gap: 1em;
     grid-template-areas: "header header header" "navbar navbar navbar" "sidebar-1 article sidebar-2" "footer footer footer";
 }
 
 header, footer {
-    background-color: rgba(255, 0, 0, 0.502);
+    background-color: gray;
 }
 
 .sidebar-left, .sidebar-right {
@@ -26,7 +29,6 @@ header, footer {
 main {
     padding: 1rem;
     box-shadow: 0px 2px 5px black;
-
 }
 
 header {
@@ -35,23 +37,29 @@ header {
 
 nav {
     grid-area: navbar;
-    /* background-color: yellow; */
+    background-color: yellow;
+    padding: 1rem;
+    border-style: solid;
 }
 
 nav>a {
-    background-color: lightgreen;
-    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 0.5rem;
     border-style: solid;
 }
 
 .sticky {
     position: -webkit-sticky;
     position: sticky;
+    left: 0;
     top: 0;
+    width: 100%;
 }
 
 nav>a:hover {
-    background-color: green;
+    background-color: rgb(194, 45, 45)
 }
 
 .sidebar-left {
