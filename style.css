@@ -88,5 +88,7 @@ footer {
 }
 
 #img-caption {
-    margin-top: -2rem;
+    display: flex;
+    justify-content: center;
+    margin-top: -1rem;
 }
