@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: var(--minmax) auto var(--minmax);
     grid-template-rows: repeat(4, auto);
-    gap: 1em;
+    gap: 0.5em;
     grid-template-areas: "header header header" "navbar navbar navbar" "sidebar-1 article sidebar-2" "footer footer footer";
 }
 
@@ -55,7 +55,6 @@ nav>a {
     position: sticky;
     left: 0;
     top: 0;
-    width: 100%;
 }
 
 nav>a:hover {
