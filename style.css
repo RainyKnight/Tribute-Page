@@ -36,7 +36,7 @@ header {
 
 nav {
     grid-area: navbar;
-    background-color: yellow;
+    background-color: rgba(0, 0, 0, 0.94);
     padding: 1rem;
     border-style: solid;
 }
@@ -46,7 +46,9 @@ nav>a {
     color: white;
     background-color: black;
     padding: 0.5rem;
-    border-style: solid;
+    background-color: rgb(44, 162, 11);
+    color: black;
+    border-radius: 0.5rem;
 }
 
 .sticky {
@@ -57,7 +59,8 @@ nav>a {
 }
 
 nav>a:hover {
-    background-color: rgb(194, 45, 45)
+    background-color: greenyellow;
+    color: black;
 }
 
 .sidebar-left {
