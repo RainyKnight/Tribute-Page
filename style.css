@@ -94,6 +94,7 @@ footer {
 }
 
 #img-div {
+    margin-top: -15px;
     display: flex;
     flex-direction: column;
     padding: 1rem;
