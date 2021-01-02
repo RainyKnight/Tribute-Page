@@ -8,8 +8,6 @@ body {
     background-color: rgba(0, 0, 0, 0.673);
 }
 
-/* .flex-container {} */
-
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
@@ -39,6 +37,12 @@ main {
 
 header {
     grid-area: header;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 48px;
+    margin: 1rem;
 }
 
 nav {
