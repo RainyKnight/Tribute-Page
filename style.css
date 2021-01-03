@@ -91,6 +91,7 @@ article {
 
 footer {
     grid-area: footer;
+    margin-bottom: -1rem;
 }
 
 #img-div {
