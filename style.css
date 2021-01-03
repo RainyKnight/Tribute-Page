@@ -40,6 +40,7 @@ header {
     grid-area: header;
 }
 
+
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 64px;
@@ -123,6 +124,11 @@ img {
 }
 
 /* inherit all css for blockquote from wrapper */
+
 blockquote {
     all: inherit;
+}
+
+p, blockquote {
+    text-align: left;
 }
