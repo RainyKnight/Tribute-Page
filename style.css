@@ -40,6 +40,11 @@ header {
     grid-area: header;
 }
 
+/* for the date under the name */
+
+header>p {
+    text-align: inherit;
+}
 
 h1 {
     font-family: 'Dancing Script', cursive;
@@ -93,6 +98,10 @@ article {
 footer {
     grid-area: footer;
     margin-bottom: -1rem;
+}
+
+footer>p {
+    text-align: center;
 }
 
 #img-div {
