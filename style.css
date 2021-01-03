@@ -141,3 +141,7 @@ blockquote {
 p, blockquote {
     text-align: left;
 }
+
+#additional>p {
+    text-align: center;
+}
