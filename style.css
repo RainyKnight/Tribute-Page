@@ -59,6 +59,7 @@ nav {
     background-color: rgba(9, 9, 9, 0.94);
     padding: 1rem;
     border-style: solid;
+    margin-top: -10px;
 }
 
 nav>a {
