@@ -121,3 +121,8 @@ img {
     margin-top: -1rem;
     margin: auto;
 }
+
+/* inherit all css for blockquote from wrapper */
+blockquote {
+    all: inherit;
+}
